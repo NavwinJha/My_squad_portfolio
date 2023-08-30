@@ -18,7 +18,7 @@ df = pandas.read_csv("squad5.csv", sep=",")
 with col3:
     for index, row in df[ :4].iterrows():
         st.header(row["name"])
-        st.write(row["position"])
+        st.subheader(row["position"])
         st.image("jpg2png/" + row["images"])
         st.write(f"[Know more]({row['linkdinurl']})")
 
